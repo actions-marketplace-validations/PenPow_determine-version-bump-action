@@ -7,8 +7,8 @@ outputs:
   bumpedVersion:
     description: 'The bumped version'
 runs:
-  using: 'node16',
-  main: 'dist/index.js',
+  using: 'node16'
+  main: 'dist/index.js'
 branding:
   icon: 'git-commit'
   color: 'purple'

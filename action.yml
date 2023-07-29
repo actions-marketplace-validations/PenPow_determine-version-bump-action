@@ -1,0 +1,14 @@
+name: 'Determine Version Bump Action'
+author: 'Joshua Clements'
+description: 'Determine the version bump required and the next applicable version'
+outputs:
+  versionBump:
+    description: 'The type of bump (major, minor, patch)'
+  bumpedVersion:
+    description: 'The bumped version'
+runs:
+  using: 'node16',
+  main: 'dist/index.js',
+branding:
+  icon: 'git-commit'
+  color: 'purple'

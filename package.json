@@ -1,7 +1,7 @@
 {
-  "type": "commonjs",
+  "type": "module",
   "scripts": {
-	"build": "ncc build src/index.ts --license licenses.txt"
+    "build": "tsc"
   },
   "main": "dist/index.js",
   "dependencies": {
@@ -12,7 +12,6 @@
   "devDependencies": {
     "@types/conventional-recommended-bump": "^6.1.0",
     "@types/semver": "^7.5.0",
-    "@vercel/ncc": "^0.36.1",
     "type-fest": "^4.0.0",
     "typescript": "^5.1.6"
   }

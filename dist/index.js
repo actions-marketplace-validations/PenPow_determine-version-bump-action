@@ -6,6 +6,7 @@ try {
     conventionalRecommendBump({ preset: 'angular' }, (error, recommendation) => {
         if (error ?? !recommendation.releaseType)
             return core.setFailed(error ?? 'Could not determine version bump');
+        console.log(import.meta.url);
         const currentVersion = readFileSync(toPlatformPath("../../package.json"), "utf-8");
         const pkg = JSON.parse(currentVersion);
         if (!pkg.version)

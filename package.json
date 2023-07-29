@@ -1,5 +1,5 @@
 {
-  "type": "module",
+  "type": "commonjs",
   "scripts": {
 	"build": "ncc build src/index.ts --license licenses.txt"
   },

@@ -1,6 +1,10 @@
 name: 'Determine Version Bump Action'
 author: 'Joshua Clements'
 description: 'Determine the version bump required and the next applicable version'
+inputs:
+  currentVersion:
+    description: 'Current package version'
+    required: true
 outputs:
   versionBump:
     description: 'The type of bump (major, minor, patch)'
